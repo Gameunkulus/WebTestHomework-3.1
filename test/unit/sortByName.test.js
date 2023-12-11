@@ -7,7 +7,7 @@ describe("Books names test suit", () => {
       "Властелин Колец",
       "Волшебник изумрудного города",
     ]
-   
+
     const result = sorting.sortByName(input)
 
     const expected = [
@@ -15,7 +15,7 @@ describe("Books names test suit", () => {
       "Волшебник изумрудного города",
       "Гарри Поттер",
     ]
-   
+
     expect(result).toEqual(expected);
   });
 
@@ -28,33 +28,33 @@ describe("Books names test suit", () => {
       "Властелин Колец",
       "Волшебник изумрудного города",
     ]
-   
+
     const result = sorting.sortByName(input)
 
     const expected = [
       "Властелин Колец",
       "Волшебник изумрудного города",
     ]
-   
+
     expect(result).toEqual(expected);
 
   });
 
-  
+
   test("No changes at all", () => {
     const input = [
       "Властелин Колец",
       "Властелин Колец",
     ]
-   
+
     const result = sorting.sortByName(input)
 
     const expected = [
       "Властелин Колец",
       "Властелин Колец",
     ]
-    
+
     expect(result).toEqual(expected);
   });
-  
+
 });
